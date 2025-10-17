@@ -1,5 +1,5 @@
 package com.thealgorithms.puzzlesandgames;
-
+//Commit de Oscar 
 /**
  * A class that provides methods to solve Sudoku puzzles of any n x n size
  * using a backtracking approach, where n must be a perfect square.
@@ -166,16 +166,4 @@ final class Sudoku {
             System.out.println("No solution");
         }
     }
-    
-    
-    public static int cambiosIvan(int x, int i){
-        int num1 = x;
-        int num2 = i;
-        int suma;
-        
-        suma = num1 + num2;
-        
-        return suma;
-    }
-    
 }
