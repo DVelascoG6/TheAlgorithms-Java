@@ -80,7 +80,9 @@ public final class InverseOfMatrix {
                     pi1 = pi0;
                     k = i;
                 }
-            }
+            }//Este fragmento realiza pivotamiento parcial con escalamiento durante el proceso de eliminación Gaussiana.
+            //Su objetivo es encontrar, en cada paso, la mejor fila para usar como pivote es decir, aquella que proporciona 
+            //mayor estabilidad numérica al algoritmo
 
             // Swap rows
             int temp = index[j];
