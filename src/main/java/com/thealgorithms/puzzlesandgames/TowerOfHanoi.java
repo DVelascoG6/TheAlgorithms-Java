@@ -62,4 +62,8 @@ final class TowerOfHanoi {
             shift(n - 1, intermediatePole, startPole, endPole, result);
         }
     }
+
+    public static void cambioIsmael(){
+        // no hace nada
+    }
 }
