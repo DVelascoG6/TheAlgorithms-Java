@@ -166,4 +166,16 @@ final class Sudoku {
             System.out.println("No solution");
         }
     }
+    
+    
+    public static int cambiosIvan(int x, int i){
+        int num1 = x;
+        int num2 = i;
+        int suma;
+        
+        suma = num1 + num2;
+        
+        return suma;
+    }
+    
 }
