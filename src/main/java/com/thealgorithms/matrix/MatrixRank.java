@@ -15,6 +15,8 @@ import static com.thealgorithms.matrix.utils.MatrixUtil.validateInputMatrix;
  *
  * @author Anup Omkar
  */
+
+//Real Madrid 0 - 5 Barcelona
 public final class MatrixRank {
 
     private MatrixRank() {
