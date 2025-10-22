@@ -10,6 +10,7 @@ public final class Factorial {
      * @param n the number
      * @return the factorial of {@code n}
      */
+    //comentario inutil
     public static long factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Input number cannot be negative");

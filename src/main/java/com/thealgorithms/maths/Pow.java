@@ -25,7 +25,7 @@ public final class Pow {
      */
     public static long pow(int a, int b) {
         if (b < 0) {
-            throw new IllegalArgumentException("Exponent must be non-negative.");
+            throw new IllegalArgumentException("Exponent must be non-negative."); //capturamos las excepciones
         }
         long result = 1;
         for (int i = 1; i <= b; i++) {

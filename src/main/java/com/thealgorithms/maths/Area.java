@@ -1,7 +1,7 @@
 package com.thealgorithms.maths;
 
 /**
- * Find the area of various geometric shapes
+ * Hola, que pasa tio. Esta es mi primera practica 
  */
 public final class Area {
     private Area() {
