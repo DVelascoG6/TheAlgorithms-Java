@@ -1,0 +1,75 @@
+commit 514e06d073171c6484c4802b2b7c32c5990a4742
+Author: 0scar16 <oscar.morloz.1@educa.jcyl.es>
+Date:   Fri Oct 17 17:07:26 2025 +0200
+
+    Modificacion Word Oscar
+
+commit c70c8422a22bae2f6065d1cbf9ea5a77393b89e6
+Author: DiegoEspMigJCYL <diego.espmig@educa.jcyl.es>
+Date:   Fri Oct 17 16:58:20 2025 +0200
+
+    Actualizacion de la documentacion de modificaciones
+
+commit 772d48da13da1caf21500ff4f3b3aa9f74b2cf0b
+Merge: d9029239 5b1601ee
+Author: ismaelmonllo-edu <ismael.monllo@educa.jcyl.es>
+Date:   Fri Oct 17 16:40:13 2025 +0200
+
+    Merge branch 'modificaciones' of https://github.com/ConexaNet/TheAlgorithms-Java into modificaciones
+
+commit d9029239d54f1288d4cd9269ef8478cf214efd28
+Author: ismaelmonllo-edu <ismael.monllo@educa.jcyl.es>
+Date:   Fri Oct 17 16:39:56 2025 +0200
+
+    modificado el regisro de modificaciones
+
+commit 5b1601ee92041bf161d4a6610df4a91bc6a90b6d
+Merge: 7c86e588 625946c0
+Author: DiegoEspMigJCYL <diego.espmig@educa.jcyl.es>
+Date:   Fri Oct 17 16:34:05 2025 +0200
+
+    Merge branch 'modificaciones' of https://github.com/ConexaNet/TheAlgorithms-Java into modificaciones
+
+commit 625946c0bddf087d8112699025950acbf2515058
+Merge: c73281b6 7f7e414f
+Author: ismaelmonllo-edu <ismael.monllo@educa.jcyl.es>
+Date:   Fri Oct 17 16:28:33 2025 +0200
+
+    Merge branch 'modificaciones' of https://github.com/ConexaNet/TheAlgorithms-Java into modificaciones
+
+commit 7f7e414fb5a79e5d094c710f8e5133ec79367339
+Author: 0scar16 <oscar.morloz.1@educa.jcyl.es>
+Date:   Fri Oct 17 16:24:56 2025 +0200
+
+    Comentario de Oscar
+
+commit c73281b6add60500bcf4db352f3b807757b0920a
+Author: ismaelmonllo-edu <ismael.monllo@educa.jcyl.es>
+Date:   Fri Oct 17 16:19:47 2025 +0200
+
+    Añadido una funcion que no tiene ninguna utilidad
+
+commit 7c86e588e086cc5cbaf033fa703aad7db2115243
+Author: DiegoEspMigJCYL <diego.espmig@educa.jcyl.es>
+Date:   Fri Oct 17 16:18:53 2025 +0200
+
+    Cambios Diego de la Esperanza de Miguel -> Renombre de variables
+
+commit 4d6947d858d95e224d1edb946301dab4ff9e6e9b
+Author: 4isd <sd.ivan.94@gmail.com>
+Date:   Fri Oct 17 16:18:40 2025 +0200
+
+    Añadido registro de modificación (Modificaciones.docx)
+
+commit 0a611eba2a9f58b74185b77fc48c441941031a9a
+Author: 4isd <sd.ivan.94@gmail.com>
+Date:   Fri Oct 17 16:13:22 2025 +0200
+
+    Añadido en sudoku, funcion que suma dos números
+
+commit 1acca5e6d22c50973207fe9c9786755cf6a87527
+Author: 4isd <sd.ivan.94@gmail.com>
+Date:   Fri Oct 10 16:41:22 2025 +0200
+
+    Añadido fichero de modificiaciones
+

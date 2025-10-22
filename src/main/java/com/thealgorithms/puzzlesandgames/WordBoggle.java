@@ -6,6 +6,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+/**
+ * Las variables del código han sido traducidas por DiegoEspMig al Castellano
+ * @author DiegoEspMig
+ */
 
 public final class WordBoggle {
 
@@ -16,87 +20,87 @@ public final class WordBoggle {
      * boggle board, s = length of longest word in string array, w = length of
      * string array, 8 is due to 8 explorable neighbours O(nm + ws) space.
      */
-    public static List<String> boggleBoard(char[][] board, String[] words) {
+    public static List<String> boggleBoard(char[][] tabla, String[] frase) {
         Trie trie = new Trie();
-        for (String word : words) {
-            trie.add(word);
+        for (String palabra : frase) {
+            trie.add(palabra);
         }
-        Set<String> finalWords = new HashSet<>();
-        boolean[][] visited = new boolean[board.length][board.length];
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-                explore(i, j, board, trie.root, visited, finalWords);
+        Set<String> fraseFinal = new HashSet<>();
+        boolean[][] visitado = new boolean[tabla.length][tabla.length];
+        for (int i = 0; i < tabla.length; i++) {
+            for (int j = 0; j < tabla[i].length; j++) {
+                explore(i, j, tabla, trie.root, visitado, fraseFinal);
             }
         }
-        return new ArrayList<>(finalWords);
+        return new ArrayList<>(fraseFinal);
     }
 
-    public static void explore(int i, int j, char[][] board, TrieNode trieNode, boolean[][] visited, Set<String> finalWords) {
-        if (visited[i][j]) {
+    public static void explore(int i, int j, char[][] tabla, TrieNode trieNode, boolean[][] visitado, Set<String> fraseFinal) {
+        if (visitado[i][j]) {
             return;
         }
 
-        char letter = board[i][j];
-        if (!trieNode.children.containsKey(letter)) {
+        char letra = tabla[i][j];
+        if (!trieNode.ninos.containsKey(letra)) {
             return;
         }
-        visited[i][j] = true;
-        trieNode = trieNode.children.get(letter);
-        if (trieNode.children.containsKey('*')) {
-            finalWords.add(trieNode.word);
+        visitado[i][j] = true;
+        trieNode = trieNode.ninos.get(letra);
+        if (trieNode.ninos.containsKey('*')) {
+            fraseFinal.add(trieNode.palabra);
         }
 
-        List<Integer[]> neighbors = getNeighbors(i, j, board);
-        for (Integer[] neighbor : neighbors) {
-            explore(neighbor[0], neighbor[1], board, trieNode, visited, finalWords);
+        List<Integer[]> vecindario = getNeighbors(i, j, tabla);
+        for (Integer[] vecino : vecindario) {
+            explore(vecino[0], vecino[1], tabla, trieNode, visitado, fraseFinal);
         }
 
-        visited[i][j] = false;
+        visitado[i][j] = false;
     }
 
-    public static List<Integer[]> getNeighbors(int i, int j, char[][] board) {
-        List<Integer[]> neighbors = new ArrayList<>();
+    public static List<Integer[]> getNeighbors(int i, int j, char[][] tabla) {
+        List<Integer[]> vecindario = new ArrayList<>();
         if (i > 0 && j > 0) {
-            neighbors.add(new Integer[] {i - 1, j - 1});
+            vecindario.add(new Integer[] {i - 1, j - 1});
         }
 
-        if (i > 0 && j < board[0].length - 1) {
-            neighbors.add(new Integer[] {i - 1, j + 1});
+        if (i > 0 && j < tabla[0].length - 1) {
+            vecindario.add(new Integer[] {i - 1, j + 1});
         }
 
-        if (i < board.length - 1 && j < board[0].length - 1) {
-            neighbors.add(new Integer[] {i + 1, j + 1});
+        if (i < tabla.length - 1 && j < tabla[0].length - 1) {
+            vecindario.add(new Integer[] {i + 1, j + 1});
         }
 
-        if (i < board.length - 1 && j > 0) {
-            neighbors.add(new Integer[] {i + 1, j - 1});
+        if (i < tabla.length - 1 && j > 0) {
+            vecindario.add(new Integer[] {i + 1, j - 1});
         }
 
         if (i > 0) {
-            neighbors.add(new Integer[] {i - 1, j});
+            vecindario.add(new Integer[] {i - 1, j});
         }
 
-        if (i < board.length - 1) {
-            neighbors.add(new Integer[] {i + 1, j});
+        if (i < tabla.length - 1) {
+            vecindario.add(new Integer[] {i + 1, j});
         }
 
         if (j > 0) {
-            neighbors.add(new Integer[] {i, j - 1});
+            vecindario.add(new Integer[] {i, j - 1});
         }
 
-        if (j < board[0].length - 1) {
-            neighbors.add(new Integer[] {i, j + 1});
+        if (j < tabla[0].length - 1) {
+            vecindario.add(new Integer[] {i, j + 1});
         }
 
-        return neighbors;
+        return vecindario;
     }
 }
 
 // Trie used to optimize string search
 class TrieNode {
 
-    Map<Character, TrieNode> children = new HashMap<>();
-    String word = "";
+    Map<Character, TrieNode> ninos = new HashMap<>();
+    String palabra = "";
 }
 
 class Trie {
@@ -112,14 +116,14 @@ class Trie {
     public void add(String str) {
         TrieNode node = this.root;
         for (int i = 0; i < str.length(); i++) {
-            char letter = str.charAt(i);
-            if (!node.children.containsKey(letter)) {
+            char letra = str.charAt(i);
+            if (!node.ninos.containsKey(letra)) {
                 TrieNode newNode = new TrieNode();
-                node.children.put(letter, newNode);
+                node.ninos.put(letra, newNode);
             }
-            node = node.children.get(letter);
+            node = node.ninos.get(letra);
         }
-        node.children.put(this.endSymbol, null);
-        node.word = str;
+        node.ninos.put(this.endSymbol, null);
+        node.palabra = str;
     }
 }
