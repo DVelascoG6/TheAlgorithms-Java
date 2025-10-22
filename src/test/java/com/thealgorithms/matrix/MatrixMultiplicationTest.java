@@ -76,7 +76,7 @@ public class MatrixMultiplicationTest {
     }
 
     @Test
-    void testIncompatibleDimensions() {
+    void testIncompatibleDimensions() { // Hola, Buenas tardes, la he liado con el master
         double[][] a = {{1.0, 2.0}};
         double[][] b = {{1.0, 2.0}};
         assertThrows(IllegalArgumentException.class, () -> MatrixMultiplication.multiply(a, b));

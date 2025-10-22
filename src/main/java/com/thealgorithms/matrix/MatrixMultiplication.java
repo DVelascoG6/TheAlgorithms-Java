@@ -22,8 +22,7 @@ package com.thealgorithms.matrix;
  */
 
 public final class MatrixMultiplication {
-    private MatrixMultiplication() {
-    }
+    private MatrixMultiplication() { }
 
     /**
      * Multiplies two matrices.
