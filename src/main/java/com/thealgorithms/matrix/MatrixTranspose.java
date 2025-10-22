@@ -30,7 +30,7 @@ public final class MatrixTranspose {
      */
     public static int[][] transpose(int[][] matrix) {
         if (matrix == null || matrix.length == 0) {
-            throw new IllegalArgumentException("Matrix is empty");
+            throw new IllegalArgumentException("Matrix is empty"); //eso es que esta vacio pos si no sabes ingles
         }
 
         int rows = matrix.length;
