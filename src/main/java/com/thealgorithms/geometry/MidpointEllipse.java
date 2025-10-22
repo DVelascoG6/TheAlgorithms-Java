@@ -5,12 +5,10 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * The {@code MidpointEllipseTest} class provides a suite of unit tests for the
- * {@code MidpointEllipse} class, focusing on verifying the functionality of the
- * {@code drawEllipse} method.
+ * The {@code MidpointEllipse} class implements the Midpoint Ellipse Drawing Algorithm.
+ * This algorithm efficiently determines the points of an ellipse by partitioning it into two regions
+ * and employing decision parameters to iteratively select the subsequent points to plot.
 
-  <p>It employs parameterized tests to rigorously assess the output of the
-  Midpoint Ellipse algorithm across a range of input values.</p>
  */
 public final class MidpointEllipse {
 
