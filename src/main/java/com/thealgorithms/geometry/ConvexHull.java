@@ -24,14 +24,17 @@ import java.util.TreeSet;
 public final class ConvexHull {
     private ConvexHull() {
     }
-
+    /**
+     * Determines the relative orientation of three points (i, j, k).
+     */
     private static boolean checkPointOrientation(Point i, Point j, Point k) {
         int detK = Point.orientation(i, j, k);
         if (detK > 0) {
-            return true; // pointsLeftOfIJ
+            return true; // Point k lies to the left of the directed line (i → j)
         } else if (detK < 0) {
-            return false; // pointsRightOfIJ
+            return false; // Point k lies to the right of the directed line (i → j)
         } else {
+            // Collinear case: check if k is between i and j
             return k.compareTo(i) >= 0 && k.compareTo(j) <= 0;
         }
     }

@@ -5,9 +5,10 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * The MidpointEllipse class implements the Midpoint Ellipse Drawing Algorithm.
- * This algorithm efficiently computes the points on an ellipse by dividing it into two regions
- * and using decision parameters to determine the next point to plot.
+ * The {@code MidpointEllipse} class implements the Midpoint Ellipse Drawing Algorithm.
+ * This algorithm efficiently determines the points of an ellipse by partitioning it into two regions
+ * and employing decision parameters to iteratively select the subsequent points to plot.
+
  */
 public final class MidpointEllipse {
 

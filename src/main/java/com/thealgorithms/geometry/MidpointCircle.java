@@ -32,8 +32,8 @@ public final class MidpointCircle {
             return points;
         }
 
-        // Start at (radius, 0)
-        int x = radius;
+        // Start at (radius-1, 0)
+        int x = radius-1;
         int y = 0;
 
         // Decision parameter
@@ -58,7 +58,7 @@ public final class MidpointCircle {
             // Add points for this (x, y)
             addSymmetricPoints(points, centerX, centerY, x, y);
         }
-
+        //RETORNA LOS PUNTOS DEL CIRCULO
         return points;
     }
 
